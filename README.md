@@ -1,3 +1,5 @@
+![boton](https://github.com/user-attachments/assets/1865e23c-1c62-4869-a8eb-4d701e780370)
+
 1. Configurar gradle(Module:app) para utilizar viewBinding:
 
 ```  
