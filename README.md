@@ -33,17 +33,37 @@ class HomeActivity : AppCompatActivity() {
 }
 ```   
 
-Paso 1: Declarar variables y métodos
-Declaramos una variable private lateinit var btnHome: Button para almacenar una referencia al botón que se encuentra en el archivo de layout activity_home.xml.
+3. En res -> New Directory -> layout -> New Layout Resource File -> activity_home:
 
-Paso 2: Sobreescribir el método onCreate
-Sobreescribimos el método onCreate que se llama cuando se crea la actividad. En este método, llamamos al método super.onCreate para inicializar la actividad y luego establecemos el contenido de la pantalla con setContentView(R.layout.activity_home).
+```
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
 
-Paso 3: Encontrar el botón
-Utilizamos el método findViewById para encontrar el botón con el id R.id.btn_home y lo asignamos a la variable btnHome.
+    <Button
+        android:id="@+id/btn_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Haz clic!" />
+</LinearLayout>
+```
 
-Paso 4: Establecer el listener de clics
-Establecemos un listener de clics en el botón con btnHome.setOnClickListener. Cuando se hace clic en el botón, se ejecutará el código dentro de la lambda.
+4. En AndroidManifest cambio nombre a .HomeActivity (Principal) y tema: Theme.AppCompat:
 
-Paso 5: Mostrar el mensaje de toast personalizado
-Dentro del listener de clics, obtenemos el texto del botón con btnHome.text.toString() y lo utilizamos para mostrar un mensaje de toast personalizado con Toast.makeText. El mensaje de toast se muestra con el texto "¡Has hecho clic en el botón '$buttonText'!".
+```
+ <activity
+            android:name=".HomeActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+```
