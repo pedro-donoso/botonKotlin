@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout principal que contiene el botón -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical">
 
+    <!-- Botón con el id "btn_home" -->
     <Button
         android:id="@+id/btn_home"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="¡Haz clic!" />
+        android:text="¡Haz clic!"
+        tools:ignore="HardcodedText" />
+
 </LinearLayout>
