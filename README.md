@@ -22,7 +22,7 @@ import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 
-class HomeActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
     private lateinit var btnHome: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
