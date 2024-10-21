@@ -54,11 +54,11 @@ class MainActivity : AppCompatActivity() {
 </LinearLayout>
 ```
 
-4. En AndroidManifest cambio nombre a .HomeActivity (Principal) y tema: Theme.AppCompat:
+4. En AndroidManifest cambio nombre a .MainActivity (Principal) y tema: Theme.AppCompat:
 
 ```
  <activity
-            android:name=".HomeActivity"
+            android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.AppCompat">
