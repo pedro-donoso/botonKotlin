@@ -35,7 +35,7 @@ class HomeActivity : AppCompatActivity() {
 }
 ```   
 
-3. En res -> New Directory -> layout -> New Layout Resource File -> activity_home:
+3. En res -> New Directory -> layout -> New Layout Resource File -> activity_main:
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
