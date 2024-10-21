@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var btnHome: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_home)
+        setContentView(R.layout.activity_main)
         btnHome = findViewById(R.id.btn_home)
         btnHome.setOnClickListener {
             Toast.makeText(this, "¡Has hecho clic en el botón!", Toast.LENGTH_SHORT).show()
