@@ -12,7 +12,7 @@
     }
 ```
 
-2. Crear HomeActivity -> en la carpeta raiz -> New Kotlin Class/File:
+2. En MainActivity -> en la carpeta raiz -> New Kotlin Class/File:
 
 ```
 package com.example.boton
